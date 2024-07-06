@@ -25,6 +25,10 @@ $ forge test --fork-url <your_mainnet_rpc_url> --match-path test/HelloWorld.t.so
 ```
 If the test passes, RPC is working, else, it might have exceeded its rate limit or typo in the url.
 
+## Suggested Order for solving the assignment questions
+- [AddLiquid](./src/AddLiquid.sol)
+- [AddLiquidWithRouter]
+
 ## Additional Resources
 - [Foundry Docs](https://book.getfoundry.sh/)
 - [UniswapV2 Docs](https://docs.uniswap.org/contracts/v2/overview)
