@@ -11,11 +11,18 @@
 
 ### How to run tests
 
-The test forks mainnet so as to interact with contracts on a real network and also give a more realistic experience. Go to [Alchemy](https://alchemy.com) or [infura](https:/infura.io) 
+- The test forks mainnet so as to interact with contracts on a real network and also give a more realistic experience. Go to [Alchemy](https://alchemy.com) or [infura](https:/infura.io) 
 to get `your_mainnet_rpc_url`.
+- Once you get the rpc-url, create a `.env` file and add it.
+- Run the following script to save your `.env` file in foundry.
+  ```shell
+  $ source .env
+  ```
+- Run tests for a particular question using the below script.   
 ```shell
 $ forge test --fork-url <your_mainnet_rpc_url> --match-path test/<test_filename> 
 ```
+- Do not update the test cases written to solve your code, rather write your code to pass the test cases.
 
 #### Test Your RPC with HelloWorld Puzzle
 
