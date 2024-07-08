@@ -13,3 +13,8 @@ Here are a few questions to think about and research.
 1. Foundry is a smart contracts development framework that is written in rust. It offers a set of tools called FOUNDRY CHEAT CODES which is used to test how your contract reacts to specific conditions in on the blockchain. What are the set of cheatcodes used for this exercise and what does it simulate?
 2. Beforing burning the LP tokens, we need to transfer it back to the LP tokens for it burn. Would we use ERC20's `transfer()` or `trasferFrom()` to perform this action? Why are we using one over the other? 
 3. What is the significance of `sync()` in `IUniswapV2Pair`? What issues does it potentially prevent?
+
+## BurnLiquidityWithRouter.sol
+1. In UniswapV2, to burn your LP tokens and get back the liquidity provided, somewhere in the code we need to transfer the LP tokens from our contract to the pair contract for it to burn and transfer back our share of liquidity provided. Where in the UniswapV2 codebase do we find the function that does this? Hint: Check the periphery contracts.
+2. In the previous question, i.e `BurnLiquidity.sol` we didn't have to call ERC20's `approve` to anyone to use LP tokens on our behalf, while in this question, we have `approve` to someone to perform necessary actions to burn our liquidity. Why did we use `approve` here and not in the previous question?
+
