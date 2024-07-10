@@ -23,6 +23,10 @@ to get `your_mainnet_rpc_url`.
 $ forge test --fork-url <your_mainnet_rpc_url> --match-path test/<test_filename> 
 ```
 - Do not update the test cases written to solve your code, rather write your code to pass the test cases.
+- To debug the errors faced while running the tests, increase the verbosity `-vvvv` to get the stack trace of the test execution.
+  ```shell
+  $ forge test --fork-url <your_mainnet_rpc_url> --match-path test/<test_filename> -vvvv
+  ```
 
 #### Test Your RPC with HelloWorld Puzzle
 
@@ -34,7 +38,10 @@ If the test passes, RPC is working, else, it might have exceeded its rate limit 
 
 ## Suggested Order for solving the assignment questions
 - [AddLiquid](./src/AddLiquid.sol)
-- [AddLiquidWithRouter]
+- [AddLiquidWithRouter](./src/AddLiquidWithRouter.sol)
+- [BurnLiquid](./src/BurnLiquid.sol)
+- [BurnLiquidWithRouter](./src/BurnLiquidWithRouter.sol)
+- 
 
 ## Additional Resources
 - [Foundry Docs](https://book.getfoundry.sh/)

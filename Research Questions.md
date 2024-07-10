@@ -18,3 +18,7 @@ Here are a few questions to think about and research.
 1. In UniswapV2, to burn your LP tokens and get back the liquidity provided, somewhere in the code we need to transfer the LP tokens from our contract to the pair contract for it to burn and transfer back our share of liquidity provided. Where in the UniswapV2 codebase do we find the function that does this? Hint: Check the periphery contracts.
 2. In the previous question, i.e `BurnLiquidity.sol` we didn't have to call ERC20's `approve` to anyone to use LP tokens on our behalf, while in this question, we have `approve` to someone to perform necessary actions to burn our liquidity. Why did we use `approve` here and not in the previous question?
 
+## SimpleSwap.sol
+1. The `swap()` function in `UniswapV2Pair.sol` has multiple sanity and security checks in places to make sure there are no errors involved. What is the significance of line 169 in the contract i.e `require(to != _token0 && to != _token1, 'UniswapV2: INVALID_TO');`? What are the possible errors faced if this line of code is not present in the contract?
+2. What is the reason to use two local variables `_token0` and `_token1` at line 167 and 168, inside the `swap()` in `UniswapV2Pair.sol` rather than just using the `token0` and `token1` state variable?
+3. Let's suppose we decide to increase the swap fee from 0.3% to 0.5%. What changes in the `swap()` would we make to reflect this fee change? 
