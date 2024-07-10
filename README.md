@@ -41,7 +41,9 @@ If the test passes, RPC is working, else, it might have exceeded its rate limit 
 - [AddLiquidWithRouter](./src/AddLiquidWithRouter.sol)
 - [BurnLiquid](./src/BurnLiquid.sol)
 - [BurnLiquidWithRouter](./src/BurnLiquidWithRouter.sol)
-- 
+- [SimpleSwap](./src/SimpleSwap.sol)
+- [SimpleSwapWithRouter](./src/SimpleSwapWithRouter.sol)
+
 
 ## Additional Resources
 - [Foundry Docs](https://book.getfoundry.sh/)

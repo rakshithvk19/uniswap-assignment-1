@@ -22,3 +22,8 @@ Here are a few questions to think about and research.
 1. The `swap()` function in `UniswapV2Pair.sol` has multiple sanity and security checks in places to make sure there are no errors involved. What is the significance of line 169 in the contract i.e `require(to != _token0 && to != _token1, 'UniswapV2: INVALID_TO');`? What are the possible errors faced if this line of code is not present in the contract?
 2. What is the reason to use two local variables `_token0` and `_token1` at line 167 and 168, inside the `swap()` in `UniswapV2Pair.sol` rather than just using the `token0` and `token1` state variable?
 3. Let's suppose we decide to increase the swap fee from 0.3% to 0.5%. What changes in the `swap()` would we make to reflect this fee change? 
+
+## SimpleSwapWithRouter.sol
+1. How does Uniswap V2's `swapExactETHForTokens()` function handle the conversion of ETH to WETH internally? What are the implications of this for users interacting with the protocol?
+2. Investigate the role of the `path` parameter in Uniswap V2 router functions. How does the router use this to determine the swap route, and what are the gas implications of using longer paths?
+3. Examine the `deadline` parameter in Uniswap V2 swap functions. How does Uniswap implement this feature to protect users from pending transaction exploits, and what are the tradeoffs of setting different deadline values?
