@@ -1,4 +1,15 @@
-## Instructions
+# Objective
+
+The objective of this assignment is to familiarize the students with the basic architecture and functionality of uniswapV2 and DEX’s in general.It has multiple code snippets that the students need to complete along with the following the best code practices which are enforced by passing test cases.
+
+Detailed explanation of what is expected in the code snippet is provided in each of the contract code.
+Students are also provided with a few research questions regarding the architecture of the uniswapV2 to help them understand why the code in modelled in a particular way. 
+
+# Outcome
+
+Students get to understand the functionality of Adding Liquidity, Burning Liquidity, Swapping tokens and the architecture of Uniswap V2.
+
+# Instructions
 - Git clone the assignment.
 - Install Foundry and the code dependencies.
   ```shell
